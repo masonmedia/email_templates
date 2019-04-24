@@ -4,7 +4,7 @@
     <title>Welcome to Jaxx Liberty!</title>
 </head>
 
-<body style="margin: 0 auto; padding: 0; background: #f2f2f2; max-width: 700px;">
+<body style="margin: 0 auto; padding: 0; background: #ffffff; max-width: 700px;">
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
         <tr>
             <td>
@@ -16,15 +16,16 @@
                             <!--intro welcome-->
 
                             <img src="https://marketing-image-production.s3.amazonaws.com/uploads/054d2644a842287b6e6f2fe6151ddd90d28e2144a237dd11007385405379dca146af5728900ac697307abe2b22fe434f34c819c8ee1a818966356547386b5cb1.png"
-                                width="60px" alt="Welcome to Jaxx Liberty's myJAXX community!"
+                                width="60px"
                                 style="display: block; padding: 10px; font-size: 22px;line-height:20px;background-color:#ffffff;color:#000000;text-align: center;" />
                             <h1
                                 style="font-family: Helvetica Neue; font-weight: 900; font-size: 40px; margin: 10px 0;letter-spacing: -2px; line-height: 100%;">
                                 Welcome to Jaxx Liberty!</h1>
                             <p
-                                style="line-height: 160%; font-size: 23px; font-family: Avenir, Helvetica, sans-serif; padding: 10px 20px 20px">
-                                Hello {username}, please confirm your subscription to <span
-                                    style="font-weight: bold; color: #ff6902">myJaxx</span>
+                                style="line-height: 160%; font-size: 23px; font-family: Avenir, Helvetica, sans-serif; padding: 10px 20px">
+                                Hello {{name}}, please confirm your subscription to <span
+                                    style="font-weight: bold; color: #ff6902">myJaxx.</span>
+                                <!--{username} old format?-->
                             </p>
                             <a style="background-color:#fd6507;border:1px solid #333333;border-color:#333333;border-radius:6px;border-width:0px;color:#ffffff;display:inline-block;font-family:tahoma,geneva,sans-serif;font-size:20px;font-weight:normal;letter-spacing:0px;line-height:16px;padding:20px 30px 20px 30px;text-align:center;text-decoration:none"
                                 href="{{confirmationUrl}}" target="_blank">Confirm email</a>
@@ -36,8 +37,8 @@
                     <tr>
                         <td align="center" bgcolor="#f2f2f2" style="padding: 0;">
 
-                            <img src="https://marketing-image-production.s3.amazonaws.com/uploads/8b57c9a7801d0f0818f2a539ac24a5172dfc644054d3643163fbfc3ba2bad52b1cd5eb315dcee182ac9e48bdde2834e91ceef3c548000af39642e749f64c3a86.png"
-                                width="100%" height="400px" alt="Welcome to Jaxx Liberty!"
+                            <img src="https://marketing-image-production.s3.amazonaws.com/uploads/22034852f94c2fa360af1261201de660af81f6e867e0ea1ec28af0d953bd15a21ac4742166e5f947823d2294c0494acc488bbf4eb658f2f07c9fc6413071f025.jpg"
+                                width="100%" height="auto" alt="Welcome to Jaxx Liberty!"
                                 style="object-fit: cover; display: block; font-size: 22px;line-height:20px;background-color:#fffff;text-align: center;" />
                         </td>
                     </tr>
@@ -54,14 +55,13 @@
                                     <td>
 
                                         <span
-                                            style="color: grey; font-size: 23px; font-weight: bold; font-family: Helvetica Neue, Helvetica, Avenir, sans-serif;">myJAXX
+                                            style="color: #ff6902; font-size: 23px; font-weight: bold; font-family: Helvetica Neue, Helvetica, Avenir, sans-serif;">myJAXX
                                             Community</span>
                                         <h1
                                             style="font-family: Helvetica Neue; font-weight: bold; font-size: 40px; margin: 12px 0;letter-spacing: -2px; line-height: 100%;">
                                             See what Jaxx Liberty can do for you.</h1>
                                         <p
                                             style="line-height: 160%; font-size: 23px; font-family: Avenir, Helvetica, sans-serif;">
-
                                             If you received this email by mistake, simply delete it. If you don't click
                                             on the confirmation link above, you won’t be subscribed.
 
@@ -78,33 +78,11 @@
                                             By confirming the subscription, you agree that we may process your
                                             information in accordance with these terms.</p>
 
-                                        <hr style="margin: 40px 0 20px;">
-                                        <!--nested download table-->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f2f2f2"
-                                            style="border-radius: 5px; padding: 20px;">
-                                            <tr>
-                                                <td>
-                                                    <a style="color: #000" href="https://jaxx.io/downloads"
-                                                        target="_blank">
-                                                        <img src="https://marketing-image-production.s3.amazonaws.com/uploads/054d2644a842287b6e6f2fe6151ddd90d28e2144a237dd11007385405379dca146af5728900ac697307abe2b22fe434f34c819c8ee1a818966356547386b5cb1.png"
-                                                            width="60px"
-                                                            alt="Welcome to Jaxx Liberty's myJAXX community!"
-                                                            style="display: inline-block; vertical-align: middle; padding: 10px; margin-right: 20px; border: 1px solid lightgrey; border-radius: 5px; font-size: 22px;line-height:20px;background-color:#ffffff;color:#000000;text-align: center;" />
-                                                        <h3
-                                                            style="display: inline-block; font-family: Helvetica, Arial;">
-                                                            Download Jaxx Liberty. <span
-                                                                style="font-weight: normal;">It's
-                                                                100%
-                                                                free.</span></h3>
-                                                    </a>
-                                                </td>
-                                        </table>
-
+                                        <hr style="margin: 20px 0 20px;">
                                     </td>
                                 </tr>
                             </table>
                             <!--end table wrap-->
-
                         </td>
                     </tr>
 
@@ -118,79 +96,10 @@
                         </td>
                     </tr>
 
-                    <!--blog-->
-
-                    <tr>
-                        <td align="left" bgcolor="#f2f2f2" style="padding: 30px;">
-
-                            <!--table wrap-->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff"
-                                style="border-radius: 5px; padding: 30px;">
-                                <tr>
-                                    <td>
-
-                                        <span
-                                            style="color: grey; font-size: 23px; font-weight: bold; font-family: Helvetica Neue, Helvetica, Avenir, sans-serif;">Decentral
-                                            Blog</span>
-                                        <h1
-                                            style="font-family: Helvetica Neue; font-weight: bold; font-size: 40px; margin: 12px 0;letter-spacing: -2px; line-height: 100%;">
-                                            Stay up on what's happening.</h1>
-                                        <p
-                                            style="line-height: 160%; padding-bottom: 20px; font-size: 23px; font-family: Avenir, Helvetica, sans-serif;">
-                                            We publish regular posts on our company blog. You'll find the latest
-                                            announcements,
-                                            articles about Jaxx
-                                            Liberty, crypto, product updates and releases, educational content and more.
-                                        </p>
-                                        <a style="border: 1px solid #ff6902; border-radius: 5px; text-decoration: none; padding: 13px 15px; color: #ff6902; font-size: 19px; font-weight: bold; font-family: Avenir, Helvetica, sans-serif;"
-                                            href="https://support.decentral.ca/hc/en-us" target="_blank">
-                                            Learn more</a>
-                                        <hr style="margin: 40px 0 20px;">
-                                        <!--nested download table-->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#f2f2f2"
-                                            style="border-radius: 5px; padding: 20px;">
-                                            <tr>
-                                                <td>
-                                                    <a style="color: #000;" href="https://jaxx.io/downloads"
-                                                        target="_blank">
-                                                        <img src="https://marketing-image-production.s3.amazonaws.com/uploads/054d2644a842287b6e6f2fe6151ddd90d28e2144a237dd11007385405379dca146af5728900ac697307abe2b22fe434f34c819c8ee1a818966356547386b5cb1.png"
-                                                            width="60px"
-                                                            alt="Welcome to Jaxx Liberty's myJAXX community!"
-                                                            style="display: inline-block; vertical-align: middle; padding: 10px; margin-right: 20px; border: 1px solid lightgrey; border-radius: 5px; font-size: 22px;line-height:20px;background-color:#ffffff;color:#000000;text-align: center;" />
-                                                        <h3
-                                                            style="display: inline-block; font-family: Helvetica, Arial;">
-                                                            Download Jaxx Liberty. <span style="font-weight: normal;">No
-                                                                signup.</span>
-                                                        </h3>
-                                                    </a>
-                                                </td>
-                                        </table>
-
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    \
-
-                    <!--image-->
-
-                    <tr>
-                        <td align="center" bgcolor="#ffffff" style="padding: 0;">
-                            <img src="https://marketing-image-production.s3.amazonaws.com/uploads/665cfecf2243db98cf8aaddc557b5705503da168a3d1b1421c54fb13903391e63a79859b06ed00c378f30f220eded5ca62c5da4f0e4a07f613c48cd6cea99c5a.jpg"
-                                alt="Our promise to you." width="100%" height="auto"
-                                style="display: block; font-size: 22px;line-height:20px;background-color:#ff6902;color:#ffffff; text-align: center;" />
-                        </td>
-                    </tr>
-
                     <!--footer-->
 
                     <tr>
                         <td align="center" bgcolor="#000000" style="padding: 40px;">
-                            <h2
-                                style="color: #ffffff; font-size: 32px; font-family: Helvetica Neue; font-weight: 900; letter-spacing: -2px">
-                                Stay
-                                connected!</h2>
                             <!--social-->
                             <!--menu-->
                             <table border="0" bordercolor="#ffffff" cellpadding="0" cellspacing="0" width="100%"
@@ -268,23 +177,18 @@
                             </table>
 
                             <ul
-                                style="color: #ffffff; margin: 0; list-style: none; padding: 0; padding-top: 20px; font-family: Avenir, Helvetica; text-align: center;">
+                                style="color: #ffffff; margin: 0; list-style: none; padding: 0; padding: 20px 0; font-family: Avenir, Helvetica; text-align: center;">
                                 <li>
                                     <img style="width: 150px; padding: 15px 0; margin: 0 auto;"
                                         src="https://marketing-image-production.s3.amazonaws.com/uploads/649f03e73922309aad61d32a1742bc81a314734783814f66fa29743d30034399c6d569b20614a3c0cd6bc39da081b5c49f4ddcec5b93aa204b73ae26715b9670.png">
                                 </li>
-                                <li>292 Adelaide Ave, Toronto, Ontario</li>
-                                <li>M5V 1P6</li>
+                                <li>292 Adelaide Ave | Toronto, Ontario | M5V 1P6</li>
+                            
                                 <li>Email us: <a href="mailto:info@decentral.ca"
                                         style="color: #ff6902">info@decentral.ca</a></li>
                                 <li style="font-size: 13px;">You received this because you subscribed with the email
                                     address: [%email%]</li>
-                                <li style="font-size: 13px;">Don't like these emails? <a
-                                        href="<%asm_group_unsubscribe_raw_url%>"
-                                        style="text-decoration: underline; color: #999999; font-size: 12px; text-align: center;">Unsubscribe</a>
-                                    | <a href="<%asm_preferences_raw_url%>"
-                                        style="text-decoration: underline; color: #999999; font-size: 12px; text-align: center;">Preferences</a>
-                                </li>
+                                <li style="font-size: 13px;"><a href="https://jaxx.io/terms-current" target="_blank" style="color: lightgrey">Privacy Policy</a> | All content © 2019 <a href="https://decentral.ca" target="_blank" style="color: lightgrey">Decentral Inc.</a></li>
                             </ul>
                         </td>
                     </tr>
